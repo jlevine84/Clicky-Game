@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './Card'
+import Card from '../card/Card'
 import "./gameview.css"
-import characters from './characters.json'
+// import characters from '../../characters.json'
 
 class GameView extends React.Component {
   render() {
