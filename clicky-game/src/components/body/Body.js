@@ -7,9 +7,13 @@ class Body extends React.Component {
   render() {
     return(
       <div>
-        <div className="container">
-        <TitleView/>
-        <GameView/>
+        <div className="row no-gutters">
+          <div className="col6">
+            <TitleView/>
+          </div>
+          <div className="col6">
+            <GameView/>
+          </div>
         </div>
       </div>
     )
