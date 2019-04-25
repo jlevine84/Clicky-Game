@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from '../card/Card'
 import toons from '../../characters.json'
-import './game.css'
+import './maingame.css'
 
-class Game extends React.Component {
+class MainGame extends React.Component {
   state = {
     characters: [],
     shuffledCharacters: []
@@ -43,4 +43,4 @@ class Game extends React.Component {
     )
   }
 }
-export default Game
+export default MainGame

@@ -1,9 +1,10 @@
-.game {
-  height: 70%;
-  width: 55vw;
+.maingame {
+  height: 61.6vh;
+  width: 45vw;
 }
 
 .gameinfo {
-  max-height: 30%;
-  max-width: 100%;
+  height: 26.4vh;
+  width: 45vw;
+  border: solid 1px black;
 }

@@ -4,7 +4,7 @@ import './gameinfo.css'
 function GameInfo() {
   return (
     <div>
-
+      GameInfo
     </div>
   )
 }

@@ -3,9 +3,9 @@ import "./card.css"
 
 function Card(props) {
   return (
-    <span className="card">
+    <div className="toons">
       <img src={props.image} alt={props.name} id={props.id}></img>
-    </span>
+    </div>
   )
 }
 
