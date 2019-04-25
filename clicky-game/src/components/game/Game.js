@@ -1,24 +1,30 @@
 import React from 'react'
 import Card from '../card/Card'
-import characters from '../../characters.json'
+import toons from '../../characters.json'
 import './game.css'
 
 class Game extends React.Component {
   state = {
-    characters: []
+    characters: [],
+    shuffledCharacters: []
   }
 
-  shuffleArray = () => {
-    let newOrder = this.state.CharacterArray
+  selectCard = () => {
+    
+  }
+
+  shuffleCards = () => {
+    let newOrder = this.state.characters
     for (let i = newOrder.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [newOrder[i], newOrder[j]] = [newOrder[j], newOrder[i]];
     }
     console.log(newOrder)
     this.setState({
-      CharacterArray: newOrder
+      characters: newOrder
     })
   };
+  
   render() {
     return (
       <div className="container">
