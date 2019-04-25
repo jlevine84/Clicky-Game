@@ -1,0 +1,11 @@
+.title {
+  background-image: url('../../assets/images/southpark.jpg');
+  background-size: 100% 100%;
+  height: 88vh;
+  width: 45vw;
+}
+
+.game {
+  max-height: 88vh;
+  max-width: 55vw;
+}

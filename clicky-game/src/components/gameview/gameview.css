@@ -1,9 +1,9 @@
 .game {
-  height: 68vh;
+  height: 70%;
   width: 55vw;
 }
 
 .gameinfo {
-  height: 20vh;
-  width: 55vw;
+  max-height: 30%;
+  max-width: 100%;
 }

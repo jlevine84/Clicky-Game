@@ -13,6 +13,8 @@ class Game extends React.Component {
     
   }
 
+
+
   shuffleCards = () => {
     let newOrder = this.state.characters
     for (let i = newOrder.length - 1; i > 0; i--) {
@@ -27,8 +29,16 @@ class Game extends React.Component {
   
   render() {
     return (
-      <div className="container">
-        <Card/>
+      <div className="maingame">
+        {toons.map(toons => (
+          <Card
+          shuffleCards={this.shuffleCards}
+          id={toons.id}
+          key={toons.id}
+          name={toons.name}
+          image={toons.image}
+          />
+        ))}
       </div>
     )
   }

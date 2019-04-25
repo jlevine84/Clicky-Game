@@ -1,3 +1,62 @@
-{
-  
-}
+[
+  {
+    "id": 1,
+    "name": "stan",
+    "image": "/images/stan.png"
+  },
+  {
+    "id": 2,
+    "name": "kyle",
+    "image": "/images/kyle.png"
+  },
+  {
+    "id": 3,
+    "name": "eric",
+    "image": "/images/eric.png"
+  },
+  {
+    "id": 4,
+    "name": "kenny",
+    "image": "/images/kenny.png"
+  },
+  {
+    "id": 5,
+    "name": "randy",
+    "image": "/images/randy.png"
+  },
+  {
+    "id": 6,
+    "name": "timmy",
+    "image": "/images/timmy.png"
+  },
+  {
+    "id": 7,
+    "name": "towelie",
+    "image": "/images/towelie.png"
+  },
+  {
+    "id": 8,
+    "name": "mr. mackey",
+    "image": "/images/mackey.png"
+  },
+  {
+    "id": 9,
+    "name": "pc principal",
+    "image": "/images/pc-principal.png"
+  },
+  {
+    "id": 10,
+    "name": "officer barbrady",
+    "image": "/images/barbrady.png"
+  },
+  {
+    "id": 11,
+    "name": "gerald",
+    "image": "/images/gerald.png"
+  },
+  {
+    "id": 12,
+    "name": "butters",
+    "image": "/images/butters.png"
+  }
+]

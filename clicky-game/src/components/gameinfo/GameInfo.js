@@ -3,8 +3,8 @@ import './gameinfo.css'
 
 function GameInfo() {
   return (
-    <div className="container">
-      GameInfo
+    <div>
+
     </div>
   )
 }
