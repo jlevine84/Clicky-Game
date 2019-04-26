@@ -6,5 +6,8 @@
 .gameinfo {
   height: 26.4vh;
   width: 45vw;
-  border: solid 1px black;
+}
+
+.maingame {
+  overflow: hidden;
 }
