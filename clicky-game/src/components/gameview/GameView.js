@@ -21,12 +21,13 @@ class GameView extends React.Component {
     if (this.state.score && this.state.highScore === 0) {
       alert(`Game over! You scored ${this.state.score} points on your first try!`)
       this.setState({highScore: this.state.score})
+    } else if (this.state.score === this.state.highScore) {
+      alert(`You tied the high score of ${this.state.highScore}. Try again to beat it!`)
     } else if (this.state.score < this.state.highScore) {
-      alert(`Game over! You scored ${this.state.score}. Try again to beat the score of ${this.state.highScore}`)
+      alert(`Game over! You scored ${this.state.score} points. Try again to beat the high score of ${this.state.highScore}!`)
     } else {
       this.setState({highScore: this.state.score})
       alert(`Congratulations! You've set a new High Score of ${this.state.highScore}. Play again to see if you can beat it!`)
-
     }
     this.resetGame()
   }
