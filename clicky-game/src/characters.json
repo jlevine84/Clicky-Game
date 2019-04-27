@@ -2,61 +2,73 @@
   {
     "id": 1,
     "name": "stan",
-    "image": "/images/stan.png"
+    "image": "/images/stan.png",
+    "points": 0
   },
   {
     "id": 2,
     "name": "kyle",
-    "image": "/images/kyle.png"
+    "image": "/images/kyle.png",
+    "points": 0
   },
   {
     "id": 3,
     "name": "eric",
-    "image": "/images/eric.png"
+    "image": "/images/eric.png",
+    "points": 0
   },
   {
     "id": 4,
     "name": "kenny",
-    "image": "/images/kenny.png"
+    "image": "/images/kenny.png",
+    "points": 0
   },
   {
     "id": 5,
     "name": "randy",
-    "image": "/images/randy.png"
+    "image": "/images/randy.png",
+    "points": 0
   },
   {
     "id": 6,
     "name": "timmy",
-    "image": "/images/timmy.png"
+    "image": "/images/timmy.png",
+    "points": 0
   },
   {
     "id": 7,
     "name": "towelie",
-    "image": "/images/towelie.png"
+    "image": "/images/towelie.png",
+    "points": 0
   },
   {
     "id": 8,
     "name": "mr. mackey",
-    "image": "/images/mackey.png"
+    "image": "/images/mackey.png",
+    "points": 0
   },
   {
     "id": 9,
     "name": "pc principal",
-    "image": "/images/pc-principal.png"
+    "image": "/images/pc-principal.png",
+    "points": 0
   },
   {
     "id": 10,
     "name": "officer barbrady",
-    "image": "/images/barbrady.png"
+    "image": "/images/barbrady.png",
+    "points": 0
   },
   {
     "id": 11,
     "name": "gerald",
-    "image": "/images/gerald.png"
+    "image": "/images/gerald.png",
+    "points": 0
   },
   {
     "id": 12,
     "name": "butters",
-    "image": "/images/butters.png"
+    "image": "/images/butters.png",
+    "points": 0
   }
 ]

@@ -1,7 +1,7 @@
 import React from 'react';
 import GameInfo from '../gameinfo/GameInfo'
 import Card from '../card/Card'
-import toons from '../../characters.json'
+import characters from '../../characters.json'
 import "./gameview.css"
 import "../card/card.css"
 
@@ -9,8 +9,7 @@ class GameView extends React.Component {
   state = {
     score: 0,
     highScore: 0,
-    characters: [toons],
-    shuffledCharacters: [],
+    characters: characters,
     guessed: []
   }
 
@@ -18,24 +17,50 @@ class GameView extends React.Component {
     this.shuffleCards()
   }
 
-  selectCard = () => {
-    //on card click get the info from the card that was clicked.
-      // check guessed array if not guessed then push to array as valid
-      // update score
-      // if invalid - game ends - alert
-      // check if high score is > current score then update
-      // shuffle cards and reset game values for new game
+  gameOver = () => {
+    if (this.state.score && this.state.highScore === 0) {
+      alert(`Game over! You scored ${this.state.score} points on your first try!`)
+      this.setState({highScore: this.state.score})
+    } else if (this.state.score < this.state.highScore) {
+      alert(`Game over! You scored ${this.state.score}. Try again to beat the score of ${this.state.highScore}`)
+    } else {
+      this.setState({highScore: this.state.score})
+      alert(`Congratulations! You've set a new High Score of ${this.state.highScore}. Play again to see if you can beat it!`)
+
+    }
+    this.resetGame()
+  }
+
+  resetGame = () => {
+    this.setState({
+      score: 0,
+      guessed: [],
+    })
+    this.shuffleCards()
+  }
+
+  selectCard = (event) => {
+    let id = event.target.id
+    let randomNum = Math.floor((Math.random() * 5) + 1);
+    if (this.state.guessed.includes(id)) {
+      //Game Over!
+      this.gameOver()
+    } else {
+      //Continue playing!
+      this.state.guessed.push(id)
+      this.setState({score: this.state.score + randomNum})
+      this.shuffleCards()
+    }
   }
 
   shuffleCards = () => {
-    let newOrder = this.state.characters
-    for (let i = newOrder.length - 1; i > 0; i--) {
+    let shuffle = this.state.characters
+    for (let i = shuffle.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [newOrder[i], newOrder[j]] = [newOrder[j], newOrder[i]];
+      [shuffle[i], shuffle[j]] = [shuffle[j], shuffle[i]];
     }
-    console.log(newOrder)
     this.setState({
-      characters: newOrder
+      characters: shuffle
     })
   };
 
@@ -44,13 +69,14 @@ class GameView extends React.Component {
       <div>
         <div className="row no-gutters">
           <div className="maingame">
-            {toons.map(toons => (
+            {this.state.characters.map(toons => (
               <Card
-              onClick={this.shuffleCards}
+              selectCard={this.selectCard.bind(this)}
               id={toons.id}
               key={toons.id}
               name={toons.name}
               image={toons.image}
+              value={toons.points}
               />
             ))}
           </div>
