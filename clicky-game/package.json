@@ -1,7 +1,7 @@
 {
   "name": "clicky-game",
   "version": "0.1.0",
-  "homepage": "https://jlevine84.github.io/Clicky-Game/",
+  "homepage": "https://jlevine84.github.io/Clicky-Game/clicky-game",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
