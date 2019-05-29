@@ -26,8 +26,8 @@ class GameView extends React.Component {
     } else if (this.state.score < this.state.highScore) {
       alert(`Game over! You scored ${this.state.score} points. Try again to beat the high score of ${this.state.highScore}!`)
     } else {
+      alert(`Congratulations! You've set a new High Score of ${this.state.score}. Play again to see if you can beat it!`)
       this.setState({highScore: this.state.score})
-      alert(`Congratulations! You've set a new High Score of ${this.state.highScore}. Play again to see if you can beat it!`)
     }
     this.resetGame()
   }
